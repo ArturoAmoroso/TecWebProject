@@ -1,6 +1,13 @@
 # TecWebProject
-Actors - Movies - Oscar Winners
-Arturo Amoroso
-Ariel Rasguido
-Salma Claure
-Brandon Paez
+Proyecto final de la materia Tecnologias Web.
+
+  - Actors
+  - Movies
+  - Oscar Winners
+
+# Integrantes del grupo
+
+  - Arturo Amoroso G.
+  - Ariel Rasguido C.
+  - Salma Claure M.
+  - Brandon Paez T.
