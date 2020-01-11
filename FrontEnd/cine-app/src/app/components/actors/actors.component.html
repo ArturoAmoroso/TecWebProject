@@ -1,0 +1,40 @@
+<h1>Actors</h1>
+<button class="btn btn-warning" (click)="openActorModal()">
+    <div>Register</div>
+</button>
+
+<app-actors-item *ngFor="let actor of actors" [actor]="actor" (deleteActorOutput)="deleteActor($event)" (editActorOutput)="editActor($event)">
+</app-actors-item>
+
+<ng-template #actorModal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-title">Register an actor</h4>
+        <button type="button" class="close" aria-label="Close button" aria-describedby="modal-title" (click)="closeActorModal()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <p><strong>Form to create an actor </strong></p>
+        <label>Name:
+            <input type="text" class="form-control" [(ngModel)]="actor.name" placeholder="Name"/>
+        </label>
+        <br>
+        <label>Last name:
+            <input type="text" class="form-control" [(ngModel)]="actor.lastname" placeholder="Last name"/>
+        </label>
+        <br>
+        <label>Age:
+            <input type="text" class="form-control" [(ngModel)]="actor.age" placeholder="Age"/>
+        </label>
+        <br>
+        <label>Image URL:
+            <input type="text" class="form-control" [(ngModel)]="actor.imgURL" placeholder="Image URL http://"/>
+        </label>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="closeActorModal()">Cancel</button>
+        <button type="button" class="btn btn-warning" (click)="postActorModal()">Save</button>
+    </div>
+</ng-template>
+
+

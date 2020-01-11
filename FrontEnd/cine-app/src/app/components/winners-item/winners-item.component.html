@@ -1,0 +1,24 @@
+<div class="card mb-3" style="max-width: 650px;">
+    <div class="row no-gutters">
+
+        <div class="col-md-4">
+            <img src="{{winner.imgUrlActor}}" class="card-img" alt="Foto">
+        </div>
+        <div class="col-md-4">
+            <img src="{{winner.imgUrlMovie}}" class="card-img" alt="Foto">
+        </div>
+
+        <div class="col-md-4">
+            <div class="card-body">
+                <h5 class="card-title">{{winner.name}} {{winner.lastname}}</h5>
+                <p class="card-text">{{winner.movie}}</p>
+                <p class="card-text"><small class="text-muted">Year: {{winner.year}} </small></p>
+            </div>
+
+            <button type="button" class="btn btn-light" (click)="onDelete(winner)">
+                <img class="icon" src="../../assets/images/delete.png" alt="delete icon" > Delete
+            </button>
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+.header {
+    /* background: #333; */
+    background: #121212;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .header a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .title{
+    font-size: 45px;
+    font-weight: 500;
+  }
+  .icon {
+    width: 65px;
+    vertical-align: middle;
+    padding: 1px;
+    float: left;
+}
