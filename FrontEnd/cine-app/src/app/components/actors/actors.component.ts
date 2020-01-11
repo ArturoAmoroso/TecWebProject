@@ -67,7 +67,7 @@ export class ActorsComponent implements OnInit {
         // if (a == this.actor) return alert('Actor creado');
         // console.log(a);
         // console.log(this.actor);
-        alert('Actor creado');
+        alert('Actor created');
         this.initActors();
       });
     }

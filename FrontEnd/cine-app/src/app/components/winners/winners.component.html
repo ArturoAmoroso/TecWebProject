@@ -1,2 +1,10 @@
-<app-winners-item *ngFor="let winner of winners" [winner]="winner" (deleteWinnerOut)="deleteWinner($event)" >
-</app-winners-item>
+<hr>
+<h2 class="text-center">Oscar Winners</h2>
+<hr>
+<div class="container">
+
+    <div class="row">
+        <app-winners-item *ngFor="let winner of winners" [winner]="winner" (deleteWinnerOut)="deleteWinner($event)">
+        </app-winners-item>
+    </div>
+</div>

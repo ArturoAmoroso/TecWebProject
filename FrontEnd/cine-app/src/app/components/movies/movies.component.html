@@ -1,10 +1,17 @@
+<hr>
 <h2> Movies </h2>
-<button class="btn btn-warning" (click)="openMovieModal()">
+<button id="register" class="btn btn-warning" (click)="openMovieModal()">
     <div>Register</div>
 </button>
+<hr>
 
-<app-movies-item *ngFor="let movie of movies" [movie]="movie" (deleteMovieOut)="deleteMovie($event)" (editMovieOut)="editMovie($event)" (addMovieOut)="addWinner($event)">
-</app-movies-item>
+<div class="container">
+    <div class="row">
+        <app-movies-item *ngFor="let movie of movies" [movie]="movie" (deleteMovieOut)="deleteMovie($event)" (editMovieOut)="editMovie($event)" (addMovieOut)="addWinner($event)">
+        </app-movies-item>
+    </div>
+</div>
+
 
 <ng-template #movieModal>
     <div class="modal-header">

@@ -3,3 +3,12 @@
     vertical-align: middle;
     padding: 1px;
 }
+
+#info {
+    margin: auto;
+    margin-top: 10px;
+}
+
+.card {
+    margin-right: 10px;
+}
